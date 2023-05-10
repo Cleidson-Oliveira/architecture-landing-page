@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: inter, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 475px;
+    padding: 206px 62px 0;
+    background-color: #303030;
+    font-size: 20px;
+    color: #fff;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    font-size: 60px;
+    letter-spacing: -2.5px;
+    font-weight: 500;
+}
+
+.company_statistics {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 96px 171px;
+    background-color: #f9f9f9;
+}
+
+.company_statistics p {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.company_statistics p span {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.professionals_history {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 82px 54px;
+    font-size: 24px;
+}
+
+.professionals_history h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 32px;
+}
+
+.professionals_history img {
+    width: 430px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 86px;
+    background-color: #303030;
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.contact input {
+    min-width: 500px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.contact input:placeholder {
+    color: #00000050;
+}
+
+.contact input:focus {
+    outline: none;
+    background: #ffffffcc;
+}
+
+.contact button {
+    padding: 22px 46px;
+    border: none;
+    border-radius: 10px;
+    background-color: #C07212;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #C07212cc;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 60px 20px;
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .company_statistics {
+        padding: 40px 20px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .company_statistics p {
+        font-size: 16px;
+    }
+
+    .company_statistics p span {
+        font-size: 20px;
+    }
+
+    .professionals_history {
+        flex-direction: column;
+        align-items: start;
+        gap: 32px;
+        width: 100%;
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+
+    .professionals_history img {
+        width: 100%;
+    }
+
+    .professionals_history h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact input {
+        width: 90%;
+        min-width: unset;
+    }
+}
